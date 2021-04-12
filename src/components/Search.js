@@ -54,7 +54,7 @@ class SearchBreweries extends Component {
         <div className="flexContainer flexColumn fullWidth">
           <video autoPlay={true} muted loop id="background-video">
             <source
-              src={process.env.PUBLIC_URL + "videos/Beer_Pour.mp4"}
+              src="https://brewfind.s3.amazonaws.com/Beer_Pour_CloseUp.mp4"
               type="video/mp4"
             />
           </video>
