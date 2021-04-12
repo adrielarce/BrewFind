@@ -58,14 +58,14 @@ class SearchBreweries extends Component {
               type="video/mp4"
             />
           </video>
-          <div id="mobile_background-container">
+          <div id="mobile-background-container">
             <img
-              src={process.env.PUBLIC_URL + "images/Beer_CloseUp-small.jpg"}
+              src={process.env.PUBLIC_URL + "images/Beer_CloseUp_small.jpg"}
               alt="background"
             />
           </div>
           <div id="video-overlay">
-            <div id="brewfind_logo">
+            <div id="brewfind-logo">
               <img
                 src={process.env.PUBLIC_URL + "images/BrewFind_logo.png"}
                 alt="logo"
@@ -74,7 +74,7 @@ class SearchBreweries extends Component {
             <div className="typewriter">
               <p>Find a brewery in your city.</p>
             </div>
-            <div id="search_input-container">
+            <div id="search-input-container">
               <form
                 name="search-form"
                 id="search-form"

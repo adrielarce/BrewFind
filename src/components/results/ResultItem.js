@@ -45,7 +45,7 @@ class ResultItem extends Component {
     const brewery = this.state;
     return (
       <div
-        id="result_item-container"
+        id="result-item-container"
         className="flexContainer flexColumn resultItem grow"
         onClick={this.handleShowModal}
       >
@@ -109,7 +109,7 @@ class Modal extends Component {
         {this.state.showModal ? (
           <div className="modal-backdrop">
             <div
-              id="result_modal-container"
+              id="result-modal-container"
               className="flexContainer flexColumn"
             >
               <p className="modalTitle largeText mediumFont">{brew.name}</p>

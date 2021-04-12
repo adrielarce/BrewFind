@@ -156,7 +156,7 @@ class DisplayResults extends Component {
                   type="text"
                   id="name"
                   value={this.state.name}
-                  className="filter_input"
+                  className="filter-input"
                   placeholder="Company"
                   onChange={this.handleFilterInputChange}
                 />
@@ -164,19 +164,19 @@ class DisplayResults extends Component {
                   type="text"
                   id="street"
                   value={this.state.street}
-                  className="filter_input"
+                  className="filter-input"
                   placeholder="Address"
                   onChange={this.handleFilterInputChange}
                 />
               </div>
               <div
-                id="checkbox_filters-container"
+                id="checkbox-filters-container"
                 className="flexContainer flexColumn"
               >
                 <div className="flexContainer">
-                  <span className="checkbox_filter-item">
+                  <span className="checkbox-filter-item">
                     <input
-                      className="checkbox_filters"
+                      className="checkbox-filters"
                       id="c0"
                       type="checkbox"
                       value="all"
@@ -185,9 +185,9 @@ class DisplayResults extends Component {
                     />
                     <label htmlFor="c0">All</label>
                   </span>
-                  <span className="checkbox_filter-item">
+                  <span className="checkbox-filter-item">
                     <input
-                      className="checkbox_filters"
+                      className="checkbox-filters"
                       id="c1"
                       type="checkbox"
                       value="nano"
@@ -195,9 +195,9 @@ class DisplayResults extends Component {
                     />
                     <label htmlFor="c1">Nano</label>
                   </span>
-                  <span className="checkbox_filter-item">
+                  <span className="checkbox-filter-item">
                     <input
-                      className="checkbox_filters"
+                      className="checkbox-filters"
                       id="c2"
                       type="checkbox"
                       value="micro"
@@ -207,9 +207,9 @@ class DisplayResults extends Component {
                   </span>
                 </div>
                 <div className="flexContainer">
-                  <span className="checkbox_filter-item">
+                  <span className="checkbox-filter-item">
                     <input
-                      className="checkbox_filters"
+                      className="checkbox-filters"
                       id="c3"
                       type="checkbox"
                       value="regional"
@@ -217,9 +217,9 @@ class DisplayResults extends Component {
                     />
                     <label htmlFor="c3">Regional</label>
                   </span>
-                  <span className="checkbox_filter-item">
+                  <span className="checkbox-filter-item">
                     <input
-                      className="checkbox_filters"
+                      className="checkbox-filters"
                       id="c4"
                       type="checkbox"
                       value="brewpub"
@@ -227,9 +227,9 @@ class DisplayResults extends Component {
                     />
                     <label htmlFor="c4">BrewPub</label>
                   </span>
-                  <span className="checkbox_filter-item">
+                  <span className="checkbox-filter-item">
                     <input
-                      className="checkbox_filters"
+                      className="checkbox-filters"
                       id="c5"
                       type="checkbox"
                       value="large"
@@ -239,9 +239,9 @@ class DisplayResults extends Component {
                   </span>
                 </div>
                 <div className="flexContainer">
-                  <span className="checkbox_filter-item">
+                  <span className="checkbox-filter-item">
                     <input
-                      className="checkbox_filters"
+                      className="checkbox-filters"
                       id="c6"
                       type="checkbox"
                       value="planning"
@@ -249,9 +249,9 @@ class DisplayResults extends Component {
                     />
                     <label htmlFor="c6">Planning</label>
                   </span>
-                  <span className="checkbox_filter-item">
+                  <span className="checkbox-filter-item">
                     <input
-                      className="checkbox_filters"
+                      className="checkbox-filters"
                       id="c7"
                       type="checkbox"
                       value="contract"
@@ -259,9 +259,9 @@ class DisplayResults extends Component {
                     />
                     <label htmlFor="c7">Contract</label>
                   </span>
-                  <span className="checkbox_filter-item">
+                  <span className="checkbox-filter-item">
                     <input
-                      className="checkbox_filters"
+                      className="checkbox-filters"
                       id="c8"
                       type="checkbox"
                       value="proprietor"
@@ -269,9 +269,9 @@ class DisplayResults extends Component {
                     />
                     <label htmlFor="c8">Proprietor</label>
                   </span>
-                  <span className="checkbox_filter-item">
+                  <span className="checkbox-filter-item">
                     <input
-                      className="checkbox_filters"
+                      className="checkbox-filters"
                       id="c9"
                       type="checkbox"
                       value="closed"
@@ -284,9 +284,9 @@ class DisplayResults extends Component {
             </div>
           </div>
         ) : null}
-        <div id="search_results-container" className="fullWidth">
+        <div id="search-results-container" className="fullWidth">
           <div
-            id="search_results"
+            id="search-results"
             className="flexContainer resultsContainer grow"
           >
             {results.map((brew) => {
@@ -294,7 +294,7 @@ class DisplayResults extends Component {
             })}
           </div>
           {results.length % 50 === 0 && results.length > 0 ? (
-            <div id="load_more-container">
+            <div id="load-more-container">
               <p
                 onClick={this.handleLoadMore}
                 className="mediumFont clickable colorTextSecondary"
@@ -303,7 +303,7 @@ class DisplayResults extends Component {
               </p>
             </div>
           ) : results.length > 0 ? (
-            <div id="end_list-container">
+            <div id="end-list-container">
               <p className="colorTextTertiary">END OF LIST</p>
               <p
                 onClick={this.scrollTop}
