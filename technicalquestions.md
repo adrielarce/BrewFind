@@ -11,7 +11,7 @@ it.**
 One of the most useful features added to a recent version of React.js was the introduction of hooks. These allow React functional components to have state, without implementing a class component. In my opinion, these are very useful because they allow for, in most cases where state is required, cleaner and simpler code.
 
 An example:
-
+```
 const [goals, setGoals] = useState([]);
 
 useEffect(() => {
@@ -20,7 +20,7 @@ useEffect(() => {
     else
         setGoals([]);
 }, [program]);
-
+```
 **How would you track down a performance issue in production? Have you ever
 had to do this?**
 
@@ -33,7 +33,7 @@ This is a process I have had to complete in my current position. We do tend to l
 I found that the API i used was good. One notable absence is the use of a authentication token and any rate limit. If the API were to be heavily used, or even targeted by a DDoS attack, then the performance of the API would be lowered or even experience outages.
 
 **Please describe yourself using JSON.**
-
+```
 {
     firstName: "Adriel",
     lastName: "Arce",
@@ -58,3 +58,4 @@ I found that the API i used was good. One notable absence is the use of a authen
         }],
     },
 }
+```
