@@ -60,7 +60,7 @@ class SearchBreweries extends Component {
           </video>
           <div id="mobile-background-container">
             <img
-              src={process.env.PUBLIC_URL + "images/Beer_CloseUp_small.jpg"}
+              src={process.env.PUBLIC_URL + "images/Beer_CloseUp-small.jpg"}
               alt="background"
             />
           </div>
@@ -85,7 +85,7 @@ class SearchBreweries extends Component {
                   type="search"
                   name="city"
                   id="city"
-                  placeholder="Enter a city"
+                  placeholder="Enter a city (U.S.A.)"
                   onChange={this.handleChange}
                 />
                 <button
