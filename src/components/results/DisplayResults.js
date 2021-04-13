@@ -290,7 +290,7 @@ class DisplayResults extends Component {
             className="flexContainer resultsContainer grow"
           >
             {results.map((brew) => {
-              return <ResultItem brewery={brew} />;
+              return <ResultItem id={brew.obdb_id} key={brew.obdb_id} brewery={brew} />;
             })}
           </div>
           {results.length % 50 === 0 && results.length > 0 ? (
