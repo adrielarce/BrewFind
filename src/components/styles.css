@@ -2,6 +2,9 @@
 html {
   font-family: "Roboto", sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 .flexContainer {
   display: flex;
   flex-wrap: wrap;
@@ -120,14 +123,15 @@ input {
 }
 */
 #background-video {
-  position: relative;
   z-index: -1;
+  height: 100vh;
 }
 #mobile-background-container {
   display: none;
 }
 @media (min-aspect-ratio: 16/9) {
   #background-video {
+    z-index: -1;
     min-width: 100%;
     height: auto;
     min-height: 100vh;
