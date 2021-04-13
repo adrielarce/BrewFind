@@ -37,7 +37,7 @@ export const reducers = combineReducers({
 });
 
 // store
-export function configureStore(initialState = []) {
+export function configureStore(initialState = {}) {
   const store = createStore(reducers, initialState);
   return store;
 }
